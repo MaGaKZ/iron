@@ -31,7 +31,11 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :development do
+gem 'capistrano', '~> 3.4'
+gem 'capistrano-rails', '~> 1.1.3'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
