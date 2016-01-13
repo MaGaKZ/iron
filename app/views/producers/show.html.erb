@@ -1,0 +1,16 @@
+ <div class="category-title"id="main-title">
+            <h4><%=@producer.name%></h4>
+            <div class="category-image">
+            <%= image_tag @producer.photo.url%>
+            </div>
+</div>
+<div class="row">
+	<%@products.where(:producer_id=>@producer.id).each do |producer|%>
+	<div class="col-md-3">
+	<%=link_to producer.name, producer%>
+	<p><%=producer.price%>$</p>
+	</div>
+	
+	<%end%>
+
+</div>

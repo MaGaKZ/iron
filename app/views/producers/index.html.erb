@@ -1,0 +1,19 @@
+<div class="category-title"id="main-title">
+  <h4>Все продукции</h4>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Имя компании</th>
+    </tr>
+    </thead>
+    <tbody>
+     <% @producers.each do |producer| %>
+      <tr>
+        <td><%=link_to producer.name, producer %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<%= link_to 'New producer', new_producer_path %>

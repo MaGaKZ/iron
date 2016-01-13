@@ -1,0 +1,176 @@
+body {
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+}
+
+header {
+    background-color: #fafafa;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1030px;
+}
+
+.navbar-right {
+    font-size: 17px;
+    .site-nav {
+        display: inline-block;
+        margin-top: 10px;
+        a {
+            padding: 15px;
+            color: #333;
+            &:hover {
+                color: #338dbc;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.navbar-left img {
+    width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#dropmenu {
+    margin: 0 -55px 0;
+    box-shadow: none;
+    a {
+        padding: 5px;
+        text-align: center;
+    }
+    background-color: #fafafa;
+    li {
+        padding: 0px;
+        width: 100px;
+        a:hover {
+            background-color: #fafafa;
+        }
+    }
+}
+
+#leftcon {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.item img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.main {
+    margin-top: 60px;
+}
+
+#indicator .active {
+    border: 2px solid #338dbc;
+}
+
+#indicator li {
+    border: 1px solid grey;
+}
+
+.category-title {
+    margin-top: -10px;
+    text-transform: uppercase;
+    font-size: 0.9375em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #f0f0f0;
+    h4 {
+        font-weight: 300;
+    }
+}
+
+.category-name {
+    list-style: none;
+    display: block;
+    line-height: 1.8;
+    a {
+        padding: 4px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: #4c4c4c;
+        &:hover {
+            text-decoration: none;
+            color: #338dbc;
+        }
+    }
+}
+
+.category-list {
+    margin-left: -5px;
+    padding: 0;
+}
+
+.producers {
+    margin-top: 30px;
+}
+
+#main-title h4 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.category-image img {
+    width: 100%;
+}
+
+#table-cell {
+    display: table-cell;
+}
+
+.all-category-list {
+    display: table-cell;
+    padding-left: 24px;
+    font-size: 12px;
+}
+
+.title-product {
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    a {
+        color: #66afd5;
+    }
+}
+
+.category-margin {
+    margin-bottom: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+.product-title {
+    font-size: 1.75em;
+}
+
+.product-price {
+    color: #338dbc;
+    font-size: 1.875em;
+    font-weight: 700;
+}
+
+.product-descriptions {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    color: #4c4c4c;
+}
+
+.home-features {
+    margin-top: 50px;
+    border-top: 2px solid grey;
+    padding: 30px 0;
+}

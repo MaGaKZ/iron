@@ -1,0 +1,31 @@
+<header>
+      <div class="container">
+        <div class="navbar-left">
+          <%=link_to image_tag("logo.png"), root_path%>
+        </div>
+        
+        <div class="navbar-right">
+          <ul class="site-nav">
+            <li class="site-nav">
+              <%= link_to "Главная", root_path, class:"site-link" %>
+            </li>
+            <li class="dropdown site-nav">
+              <a href="<%= categories_path%>" class="dropdown-toggle" data-toggle="dropdown">Каталог <span class="caret"></span></a>
+              <ul class="dropdown-menu" id="dropmenu">
+                <li><%= link_to "Все продукции", products_path, class:"site-link" %></li>
+                <li><%= link_to "Все производители", producers_path, class:"site-link" %></li>
+                
+                
+              </ul>
+            </li>
+            <li class="site-nav">
+              <a href="#" class="site-link">Блог</a>
+            </li>
+            <li class="site-nav">
+              <%= link_to "О нас", static_pages_about_path, class:"site-link" %>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </header>

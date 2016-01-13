@@ -1,0 +1,18 @@
+<div class="row">
+	<div class="col-md-5">
+		<%=image_tag @category.photo.url%>
+	</div>
+	<div class="col-md-5">
+		<div class="product-title">
+			<%= @product.name %>
+		</div>
+		<div class="product-price">
+			<%= @product.price %> ₸
+		</div>
+		<div class="product-descriptions">
+			Профиль:<%= @product.size %><br>
+			Длина:<%= @product.length %>
+		</div>
+	</div>
+</div>
+<%= link_to 'Back', products_path %> | <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %>

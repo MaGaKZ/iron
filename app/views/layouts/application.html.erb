@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <meta charset="utf-8">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/header'%>
+
+
+ <div class="container main">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="category-title">
+            <h4 id="table-cell">Категории</h4>
+            <div class="all-category-list">
+              <%= link_to "Все Категории",categories_path %>
+            </div>
+          </div>
+          <div>
+            <ul class="category-list">
+              <% @categories.each do |category| %>
+              <li class="category-name">
+                <%=link_to category.name, category %>
+              </li>
+              <%end%>
+            </ul>
+          </div>
+          <div class="producers">
+          <div class="category-title">
+            <h4>Производители</h4>
+          </div>
+          <div>
+            <ul class="category-list">
+              <% @producers.each do |producer| %>
+              <li class="category-name">
+                <%=link_to producer.name, producer %>
+              </li>
+              <%end%>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+<%= yield %>
+ </div>
+      </div>
+    </div>
+<%= render 'layouts/footer'%>
+</body>
+</html>
