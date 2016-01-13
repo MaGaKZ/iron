@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:MaGaKZ/iron.git'
 
 
 
-set :deploy_to, '/home/deploy/.rbenv/'
+set :deploy_to, '/home/deploy/iron'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
